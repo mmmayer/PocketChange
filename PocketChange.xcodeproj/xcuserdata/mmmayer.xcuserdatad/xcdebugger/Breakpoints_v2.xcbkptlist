@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "E582BE0B-DD1F-4900-8B7B-7D4A88D2B90B"
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.SymbolicBreakpoint">
+         <BreakpointContent
+            uuid = "A20C0214-636A-4D05-98AF-E3F7EA80DF3D"
+            shouldBeEnabled = "Yes"
+            nameForDebugger = "catString"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            symbolName = "catString"
+            moduleName = "">
+            <Locations>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>
