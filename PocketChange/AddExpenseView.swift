@@ -11,10 +11,11 @@ struct AddExpenseView: View {
     static let categories = Category.allCases.map { $0.rawValue.capitalized }
     
     @Environment(\.dismiss) var dismiss
-    @ObservedObject var expenses: Expenses
     @State private var name = ""
     @State private var category: Category = .business
     @State private var amount = 0.0
+    
+    var expenses: Expenses
     
     var body: some View {
         NavigationView {

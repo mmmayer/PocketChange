@@ -7,10 +7,11 @@
 
 import Foundation
 
-class Expenses: ObservableObject {
+@Observable
+class Expenses {
     static let itemsKey = "items"
     
-    @Published var items = [ExpenseItem]() {
+    var items = [ExpenseItem]() {
         didSet {
             if let encoded = try? JSONEncoder().encode(items) {
                 UserDefaults.standard.set(encoded, forKey: Expenses.itemsKey)

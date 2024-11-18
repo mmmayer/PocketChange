@@ -7,6 +7,13 @@
 
 import Foundation
 
+struct ExpenseItem: Identifiable, Codable, Equatable {
+    var id: UUID
+    var name: String
+    var category: Category
+    var amount: Double
+}
+
 enum Category: String, CustomStringConvertible, CaseIterable, Codable {
     var description: String {
         get {
@@ -15,15 +22,11 @@ enum Category: String, CustomStringConvertible, CaseIterable, Codable {
     }
     
     case business
-    case personal
-    case household
     case charity
-    case other
+    case entertainment
+    case household
+    case medical
+    case personal
+    case uncategorized
 }
 
-struct ExpenseItem: Identifiable, Codable, Equatable {
-    var id: UUID
-    var name: String
-    var category: Category
-    var amount: Double
-}

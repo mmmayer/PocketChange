@@ -15,6 +15,7 @@ struct ItemView: View {
                 Text(item.name)
                     .font(.headline)
                 Text(item.category.description)
+                    .font(.subheadline)
             }
             
             Spacer()
@@ -26,6 +27,6 @@ struct ItemView: View {
 
 struct ItemView_Previews: PreviewProvider {
     static var previews: some View {
-        ItemView(item: ExpenseItem(id: UUID(), name: "Test", category: .other, amount: 1.0))
+        ItemView(item: ExpenseItem(id: UUID(), name: "Test", category: .personal, amount: 1.0))
     }
 }
